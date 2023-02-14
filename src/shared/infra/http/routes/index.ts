@@ -3,10 +3,10 @@ import { Router } from "express";
 import { authenticateRoutes } from "./authenticate.routes";
 import { carsRoutes } from "./cars.routes";
 import { categoriesRoutes } from "./categories.routes";
+import { passwordRoutes } from "./password.routes";
+import { rentalRoutes } from "./rental.routes";
 import { specificationsRoutes } from "./specifications.routes";
 import { usersRoutes } from "./users.routes";
-import { rentalRoutes } from "./rental.routes";
-import { passwordRoutes } from "./password.routes";
 
 const router = Router();
 
@@ -17,6 +17,5 @@ router.use(authenticateRoutes);
 router.use("/cars", carsRoutes);
 router.use("/password", passwordRoutes);
 router.use("/rentals", rentalRoutes);
-
 
 export { router };
