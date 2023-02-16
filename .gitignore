@@ -3,3 +3,5 @@ tmp/
 .env
 coverage/
 dist
+ormconfig.json
+.vscode
